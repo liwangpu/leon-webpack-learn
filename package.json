@@ -1,0 +1,28 @@
+{
+  "name": "leon-webpack-learn",
+  "version": "1.0.0",
+  "description": "for learning",
+  "private": true,
+  "scripts": {
+    "test": "cls && node dist/main.js",
+    "build":"webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liwangpu/leon-webpack-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liwangpu/leon-webpack-learn/issues"
+  },
+  "homepage": "https://github.com/liwangpu/leon-webpack-learn#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
