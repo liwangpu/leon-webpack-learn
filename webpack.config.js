@@ -2,13 +2,20 @@ const path = require('path');
 
 module.exports = [
     {
-        entry: './src/index.js',
+        entry: {
+            main: './src/car.ts'
+        },
         optimization: {
             minimize: false,
         },
         output: {
-            filename: 'main.js',
+            filename: 'bundle.js',
             path: path.resolve(__dirname, 'dist'),
         },
+        module: {
+            rules: [
+                { test: /\.ts$/, use: 'ts-loader' }
+            ]
+        }
     }
 ];
