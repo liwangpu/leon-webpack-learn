@@ -1,5 +1,3 @@
-function sort() {
-    console.log('do sort');
+exports.sort = function () {
+    console.log('sort complete!');
 }
-
-exports.sort = sort;

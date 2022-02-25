@@ -1,13 +1,3 @@
-var tool = require('./tool');
-
-class Person {
-    constructor() {
-
-    }
-
-    hello() {
-        console.log('hello');
-    }
-}
+const tool = require('./tool');
 
 tool.sort();

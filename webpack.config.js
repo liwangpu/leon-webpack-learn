@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = [
     {
         entry: {
-            main: './src/car.ts'
+            main: './src/index.js'
         },
         optimization: {
             minimize: false,
@@ -14,7 +14,7 @@ module.exports = [
         },
         module: {
             rules: [
-                { test: /\.ts$/, use: 'ts-loader' }
+                // { test: /\.ts$/, use: 'ts-loader' }
             ]
         }
     }
