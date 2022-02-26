@@ -1,3 +1,4 @@
-const tool = require('./tool');
+import {sort} from './tool';
 
-tool.sort();
+
+sort();
