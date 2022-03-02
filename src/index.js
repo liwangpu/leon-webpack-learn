@@ -1,6 +1,6 @@
-import {sort} from './tool';
+import { sort } from './tool';
 
 
 sort();
 
-console.log(3);
+console.log(5);
