@@ -1,0 +1,35 @@
+{
+  "name": "webpack-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:browser": "node server.js",
+    "server:node": "nodemon _dist/index.js",
+    "build:simple": "gulp build --dir simple",
+    "build:code-split": "gulp build --dir code-split"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.183",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "nodemon": "^2.0.19",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0",
+    "live-server": "^1.2.2",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

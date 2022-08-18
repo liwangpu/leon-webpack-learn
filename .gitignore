@@ -2,7 +2,9 @@
 
 # compiled output
 **/dist
+**/_dist
 **/tmp
+**/_tmp
 **/out-tsc
 **/image
 # dependencies
