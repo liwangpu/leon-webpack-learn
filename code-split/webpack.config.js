@@ -4,10 +4,14 @@ const webpack = require('webpack');
 const copyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 module.exports = (env) => {
   return {
     mode: 'development',
     devtool: false,
+    // experiments: {
+    //   outputModule: true,
+    // },
     entry: {
       index: {
         import: './code-split/src/index.js',
@@ -17,6 +21,10 @@ module.exports = (env) => {
       filename: '[name].js',
       path: path.resolve(__dirname, '../_dist'),
       clean: true,
+      // library: {
+      //   // name: 'tool',
+      //   type: 'module'
+      // },
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -35,6 +43,18 @@ module.exports = (env) => {
           }
         }
       }
-    }
+    },
+    // exclude:path.resolve(__dirname, "node_modules")
+    // externals: {
+    //   lodash: 'lodash'
+    // }
+    // module: {
+    //   rules: [
+    //     {
+    //       test: require.resolve('./src/tool.js'),
+    //       use: 'exports-loader?type=commonjs&exports=file,multiple|helpers.parse|parse'
+    //     }
+    //   ]
+    // }
   };
 };

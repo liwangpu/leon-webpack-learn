@@ -12,6 +12,9 @@ function add(a, b) {
   return a + b;
 }
 
+// console.log(`ccc:`,);
+window.myLibSort = sort;
+
 module.exports = {
   sort,
   task,
