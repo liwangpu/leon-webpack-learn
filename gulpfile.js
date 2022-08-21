@@ -6,7 +6,7 @@ const [dir] = process.argv.slice(4);
 function build(cb) {
   exec(`webpack -c ./${dir}/webpack.config.js`, (error, stdout, stderr) => {
     if (stdout) {
-      console.log(`stdout: ${stdout}`);
+      console.log(`${stdout}`);
     }
     if (error) {
       console.log(`error: ${error.message}`);

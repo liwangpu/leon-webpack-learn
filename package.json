@@ -7,7 +7,8 @@
     "server:browser": "node server.js",
     "server:node": "nodemon _dist/index.js",
     "build:simple": "gulp build --dir simple",
-    "build:code-split": "gulp build --dir code-split"
+    "build:code-split": "gulp build --dir code-split",
+    "build:custom-loader": "gulp build --dir custom-loader"
   },
   "keywords": [],
   "author": "",
