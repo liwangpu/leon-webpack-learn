@@ -45,9 +45,9 @@ module.exports = (env) => {
       }
     },
     // exclude:path.resolve(__dirname, "node_modules")
-    // externals: {
-    //   lodash: 'lodash'
-    // }
+    externals: {
+      lodash: 'lodash'
+    }
     // module: {
     //   rules: [
     //     {
