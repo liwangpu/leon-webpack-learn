@@ -27,6 +27,7 @@ module.exports = (env) => {
       // },
     },
     plugins: [
+      new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({
         title: '代码分隔',
         template: './code-split/index.html'
@@ -45,9 +46,9 @@ module.exports = (env) => {
       }
     },
     // exclude:path.resolve(__dirname, "node_modules")
-    // externals: {
-    //   lodash: 'lodash'
-    // }
+    externals: {
+      lodash: 'lodash'
+    }
     // module: {
     //   rules: [
     //     {
