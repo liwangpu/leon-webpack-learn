@@ -9,7 +9,6 @@
     "server:node": "nodemon _dist/index.js",
     "build:simple": "gulp build --dir simple",
     "build:chunk-build": "gulp build --dir chunk-build",
-    "build:ng-esm": "gulp build --dir ng-esm",
     "build:code-split": "gulp build --dir code-split",
     "build:custom-loader": "gulp build --dir custom-loader"
   },
